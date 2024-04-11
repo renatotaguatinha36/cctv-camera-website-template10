@@ -22,7 +22,7 @@ try {
   $stmt->bindValue(':firstname', $firstname, PDO::PARAM_STR);
   $stmt->bindValue(':lastname', $lastname, PDO::PARAM_STR);
   $stmt->bindValue(':email', $email, PDO::PARAM_STR);
-  $stmt->bindValue(':id', $id,PDO::PARAM_INT );
+  $stmt->bindValue(':id', $id, PDO::PARAM_INT);
   
   $stmt->execute();
   echo "New record created successfully";
